@@ -29,7 +29,7 @@ const Cart = () => {
   
   const handleRemove = async (id) => {
     try {
-      await axios.delete(`http://localhost:9000/cart`, { data: { _id: id } });
+      await axios.delete(`https://tastcopyback.onrender.com/cart`, { data: { _id: id } });
       setCartItems(prevItems => prevItems.filter(item => item._id !== id)); // Remove item from UI
     } catch (error) {
       console.error("Error removing item:", error);
