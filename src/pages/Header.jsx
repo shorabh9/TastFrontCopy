@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { authenticateUser, logoutUser } from '../reduxSlices/userSlice';
+import { authenticateUser, logoutUser } from '../reduxSlices/UserSlice';
 import { addToCart, deleteItem } from '../reduxSlices/cartSlice';
 import Menu from './Menu';
 import B1 from "../assets/B12.jpg";

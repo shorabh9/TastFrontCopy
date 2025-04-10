@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { logoutUser } from "../reduxSlices/userSlice"; // Import the logout action
+import { logoutUser } from "../reduxSlices/UserSlice"; // Import the logout action
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
