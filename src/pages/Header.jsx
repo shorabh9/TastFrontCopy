@@ -104,7 +104,7 @@ useEffect(() => {
          hover:text-yellow-300 transition duration-300 
          px-3 py-1 rounded-lg shadow-md`
       }>
-      🛒 Cart (<span className='text-yellow-500'>{totalNumber}</span>)
+      🛒 Cart (<span className='text-yellow-500'></span>)
     </NavLink>
   </li>
 </ul>
