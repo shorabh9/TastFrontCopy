@@ -1,7 +1,8 @@
 import React from "react";
-
+import Toni from '../assets/Toni.jpg'
 const About = () => {
   return (
+    const toni = Toni;
     <div className="flex flex-col items-center min-h-screen px-6 py-10 bg-gradient-to-b from-orange-100 to-orange-300">
       <h1 className="mb-6 text-4xl font-bold text-orange-800">About Our Food App</h1>
       <p className="max-w-2xl mb-8 text-lg text-center text-gray-700">
@@ -10,7 +11,7 @@ const About = () => {
       
       <div className="flex flex-col items-center max-w-4xl p-6 bg-white shadow-lg rounded-2xl md:flex-row">
         <img
-          src="src/assets/Toni.jpg"
+          src={toni}
           alt="Founder Shorabh Singh"
           className="object-cover w-48 h-48 mb-4 border-4 border-orange-500 rounded-full shadow-md md:mb-0 md:mr-6"
         />
