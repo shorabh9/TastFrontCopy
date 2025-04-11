@@ -18,7 +18,7 @@ export default function Header() {
   const dispatch = useDispatch();
   const { isAuthenticated, email } = useSelector(state => state.user.user);
   const [backgroundImage, setBackgroundImage] = useState(B1);
-  // const images = [B1, B2, B3, B4, B5, B6, B8]
+  const images = [B1, B2, B3, B4, B5, B6, B8]
   const {totalNumber} = useSelector(state => state.cart);
 
   
