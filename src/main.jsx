@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -23,16 +24,20 @@ import Logout from "./components/Logout.jsx";
 import Cart from "./components/Cart.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/registration" element={<Registration />} />
-      <Route path="/login" element={<Login />} />
+    <>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<FoodList />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        
+        
+        <Route path="logout" element={<Logout />} />
+        <Route path="cart" element={<Cart />} />
+      </Route>
+      <Route path="registration" element={<Registration />} />
+      <Route path="login" element={<Login />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/" element={<FoodList />} />
-      <Route path="/logout" element={<Logout/>}/>
-      <Route path="/cart" element={<Cart/>}/>
-    </Route>
+    </>
   )
 );
 
