@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 function Layout() {
   return (
     <>
-    <Header/>
+     {!hideHeaderRoutes.includes(location.pathname) && <Header />}
     <Outlet />
     <Footer />
     </>
